@@ -1,7 +1,7 @@
 -- 코드를 입력하세요
-SELECT 
+SELECT
     NAME
-FROM 
-    (SELECT * FROM ANIMAL_INS ORDER BY DATETIME) 
-WHERE 
-    ROWNUM = 1;
+from
+    ANIMAL_INS
+order by DATETIME
+limit 1;
